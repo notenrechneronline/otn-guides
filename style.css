@@ -1,0 +1,78 @@
+/* OpenThreadNews guides hub — editorial identity: deep indigo + warm paper */
+:root{
+  --indigo:#23235e;
+  --indigo-deep:#16163d;
+  --copper:#c97b2d;
+  --copper-soft:#f3e2c7;
+  --paper:#faf6ee;
+  --paper-dark:#f1e9d8;
+  --ink:#23232b;
+  --ink-soft:#5b5b66;
+  --rule:#e2d6bd;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:Georgia,"Times New Roman",serif;line-height:1.75;font-size:1.06rem}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+/* masthead */
+header.masthead{background:linear-gradient(160deg,var(--indigo-deep),var(--indigo));
+  color:#fff;padding:1.6rem 0 .2rem}
+header.masthead .brand a{color:#fff;text-decoration:none;font-size:1.7rem;
+  letter-spacing:.02em;font-weight:700}
+header.masthead .tagline{color:var(--copper-soft);font-style:italic;font-size:.95rem;
+  margin:.1rem 0 1.2rem}
+/* nav */
+nav.top{background:var(--indigo-deep);border-top:1px solid rgba(255,255,255,.12)}
+nav.top ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+nav.top li{margin:0}
+nav.top a{display:block;color:#d9d6f2;text-decoration:none;font-size:.85rem;
+  padding:.7rem .95rem;font-family:Verdana,Geneva,sans-serif}
+nav.top a:hover{color:#fff;background:rgba(255,255,255,.07)}
+nav.top a.active{color:#fff;background:var(--copper)}
+/* article */
+main{padding:2.2rem 0 3rem}
+h1{font-size:2rem;line-height:1.25;color:var(--indigo-deep);margin:0 0 1rem}
+h1::after{content:"";display:block;width:4.5rem;height:.28rem;background:var(--copper);
+  margin-top:.7rem}
+h2{font-size:1.35rem;color:var(--indigo);margin:2.1rem 0 .7rem;line-height:1.35}
+h2::before{content:"";display:inline-block;width:.55rem;height:.55rem;
+  background:var(--copper);transform:rotate(45deg);margin-right:.6rem}
+h3{font-size:1.08rem;color:var(--indigo-deep);margin:1.5rem 0 .4rem}
+p.lede{font-size:1.2rem;color:var(--ink-soft);font-style:italic;
+  border-left:.25rem solid var(--copper);padding-left:1rem;margin:0 0 1.6rem}
+a{color:var(--indigo);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--copper)}
+ul,ol{padding-left:1.4rem}
+/* callout boxes */
+.edge{background:var(--paper-dark);border:1px solid var(--rule);
+  border-left:.3rem solid var(--copper);padding:1rem 1.2rem;margin:1.6rem 0;
+  font-size:.98rem}
+.edge strong{color:var(--indigo-deep)}
+.takeaways{background:#fff;border:1px solid var(--rule);padding:1.2rem 1.4rem;
+  margin:2rem 0;box-shadow:0 2px 6px rgba(35,35,94,.08)}
+.takeaways h2{margin-top:0}
+.takeaways ul{margin-bottom:0}
+.cta{background:var(--indigo);color:#fff;text-align:center;padding:1.6rem;
+  margin:2.2rem 0}
+.cta p{margin:0 0 .8rem;font-style:italic;color:var(--copper-soft)}
+.cta a{display:inline-block;background:var(--copper);color:#fff;text-decoration:none;
+  font-family:Verdana,Geneva,sans-serif;font-size:.95rem;padding:.7rem 1.6rem}
+.cta a:hover{background:#a8641f}
+/* faq */
+section.faq details{border-bottom:1px solid var(--rule);padding:.8rem 0}
+section.faq summary{cursor:pointer;font-weight:700;color:var(--indigo-deep);
+  font-size:1.02rem}
+section.faq summary::marker{color:var(--copper)}
+section.faq details div{padding:.5rem 0 .3rem;color:var(--ink-soft)}
+/* more */
+section.more ul{list-style:none;padding:0}
+section.more li{margin:.9rem 0;padding-bottom:.9rem;border-bottom:1px dotted var(--rule)}
+section.more li span{display:block;color:var(--ink-soft);font-size:.92rem}
+/* footer */
+footer.site{background:var(--indigo-deep);color:#a9a6cf;padding:1.4rem 0;
+  font-family:Verdana,Geneva,sans-serif;font-size:.85rem;text-align:center}
+footer.site a{color:var(--copper-soft)}
+@media(max-width:640px){
+  h1{font-size:1.6rem}
+  nav.top a{font-size:.78rem;padding:.6rem .7rem}
+}
