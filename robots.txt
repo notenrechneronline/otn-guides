@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://otn-guides.onrender.com/sitemap.xml
